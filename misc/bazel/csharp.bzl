@@ -15,7 +15,7 @@ def codeql_xunit_test(name, **kwargs):
     target_frameworks = kwargs.pop("target_frameworks", [TARGET_FRAMEWORK])
 
     srcs = kwargs.pop("srcs", []) + [
-        "//csharp/extractor/TestRunner:TestRunner.cs",
+        "//csharp/extractor/Testrunner:Testrunner.cs",
     ]
 
     deps = kwargs.pop("deps", []) + [
